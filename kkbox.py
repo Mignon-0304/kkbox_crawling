@@ -67,6 +67,7 @@ for tag_song in tag_songs:
   songs.append(songtitle)
   paths[songtitle] = songurl
 
+  
 
 # 新增存放歌詞檔案的資料夾，命名為歌手名
 if not os.path.isdir(singer):
