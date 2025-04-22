@@ -13,7 +13,7 @@ orpath=os.getcwd()
 前置作業：搜尋歌手 > 進入主頁面 > 進入熱門歌曲頁面
 '''
 
-# 執行後輸入歌手名稱，成為網頁搜尋提示詞
+# 執行後輸入歌手名稱，成為網頁搜尋關鍵字
 keyword = input('請輸入歌手名稱：')
 resultUrl = "https://www.kkbox.com/tw/tc/search?q=" + quote(keyword)
 html = urlopen(resultUrl).read().decode(encoding='utf-8')
@@ -87,7 +87,6 @@ for i in range(len(songs)):
 f.close()  # 關閉檔案
 
 with open('{}.txt'.format(singer)) as f: # 輸出歌曲
-  html=''
   data=f.read()
   print('\n'+data)
 
