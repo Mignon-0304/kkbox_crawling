@@ -8,7 +8,7 @@ import shutil
 import warnings
 warnings.filterwarnings('ignore')
 
-orpath=os.getcwd()
+orpath=os.getcwd() # 取得當前工作目錄（最外）
 '''
 前置作業：搜尋歌手 > 進入主頁面 > 進入熱門歌曲頁面
 '''
